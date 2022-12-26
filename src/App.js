@@ -1,7 +1,9 @@
 import React, {useEffect, useState} from "react";
 import "./App.css";
 import {useSelector} from "react-redux"
+import CartItem from "./components/CartItem";
 import Item from "./components/Item";
+import Total from "./components/Total";
 
 function App() {
     const [data, setData] = useState([])
@@ -25,10 +27,9 @@ function App() {
                             <li key={e.id}>{e.event_name}
                                 {
                                     <div>{e.outright.map((odd) => (
-                                        // <span key={odd.id}>{odd.name}<button>Add</button></span>
                                         <Item
-                                            id={odd.id}
                                             key={odd.id}
+                                            id={odd.id}
                                             name={odd.name}
                                             event_name={e.event_name}
                                             odd={odd.odd}/>
@@ -40,6 +41,16 @@ function App() {
                 )}
                 <div>
                     <p>== Cart ==</p>
+                    <Total />
+                    {cart?.map((item) => (
+                        <CartItem
+                            key={item.id}
+                            id={item.id}
+                            name={item.name}
+                            event_name={item.event_name}
+                            odd={item.odd}
+                        />
+                    ))}
                 </div>
             </header>
         </div>

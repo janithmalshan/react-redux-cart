@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "event_name": "Liverpool - Real Madrid",
+    "outright": [
+      {
+        "id": 1001,
+        "name": "Liverpool",
+        "odd": 2.00
+      },
+      {
+        "id": 1002,
+        "name": "Draw",
+        "odd": 3.05
+      },
+      {
+        "id": 1003,
+        "name": "Real Madrid",
+        "odd": 2.15
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "event_name": "Brentford - Tottenham",
+    "outright": [
+      {
+        "id": 2001,
+        "name": "Brentford",
+        "odd": 2.00
+      },
+      {
+        "id": 2002,
+        "name": "Draw",
+        "odd": 3.05
+      },
+      {
+        "id": 2003,
+        "name": "Tottenham",
+        "odd": 2.15
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "event_name": "Manchester United - Nottingham Forest",
+    "outright": [
+      {
+        "id2": 3001,
+        "name": "Manchester United",
+        "odd": 4.20
+      },
+      {
+        "id": 3002,
+        "name": "Draw",
+        "odd": 2.05
+      },
+      {
+        "id": 3003,
+        "name": "Nottingham Forest",
+        "odd": 6.15
+      }
+    ]
+  }
+]

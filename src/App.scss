@@ -1,0 +1,36 @@
+@import "styles/Events";
+@import "styles/Item";
+@import "styles/CartItem";
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background-color: #212121;
+  gap: 16px;
+  padding: 16px;
+  color: #ffffff;
+}
+
+.App__left {
+  background-color: #151517;
+  flex: 1;
+  min-height: 90vh;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.App__right {
+  width: 300px;
+  background-color: #151517;
+  position: sticky;
+  top: 0;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+hr {
+  opacity: 0.25;
+}

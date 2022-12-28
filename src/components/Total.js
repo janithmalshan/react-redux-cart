@@ -16,11 +16,12 @@ function Total() {
         <div className="total">
             <h2>ORDER SUMMARY</h2>
             <div>
-                <p className="total__p">
-                    total
+                <h3 className="total__p">
+                    Total
                     : <strong>${getTotal().totalPrice.toFixed(2)}</strong>
-                </p>
+                </h3>
             </div>
+            <hr />
         </div>
     )
 }

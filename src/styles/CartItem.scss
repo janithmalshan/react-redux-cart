@@ -1,0 +1,21 @@
+.cartItem {
+
+  &__info {
+  }
+
+  &__title {
+  }
+
+  &__price {
+  }
+
+  &__btn {
+    background-color: #433a3a;
+    color: #ff4545;
+    font-weight: 400;
+    border-radius: 4px;
+    padding: 6px 16px 4px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+}

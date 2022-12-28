@@ -1,0 +1,30 @@
+.item {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 8px;
+
+  &__info {
+  }
+
+  &__title {
+  }
+
+  &__price {
+  }
+
+  &__btn {
+    background-color: #6dff5f;
+    color: #333;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 6px 16px 4px;
+    margin-bottom: 8px;
+    cursor: pointer;
+
+    &.block {
+      padding: 16px 48px 16px;
+      width: 100%;
+      font-size: 24px;
+    }
+  }
+}

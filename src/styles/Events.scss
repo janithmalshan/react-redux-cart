@@ -1,0 +1,25 @@
+.events {
+  text-align: left;
+
+  &__list {
+    list-style: none;
+    padding: 0 0 0 4px;
+
+    &__item {
+      text-align: center;
+      display: grid;
+      grid-template-columns: minmax(200px, 0.3fr) 0.7fr;
+      margin-bottom: 8px;
+
+      &__name {
+        text-align: left;
+      }
+
+      &__outrights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 8px;
+      }
+    }
+  }
+}

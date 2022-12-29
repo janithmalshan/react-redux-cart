@@ -13,12 +13,12 @@ function Events() {
     useEffect(() => {
         fetchData()
     }, [])
+    //TODO compare 2 arrays and make disable/enable
     return (
         <div className="events">
             <h2>🎰 Events</h2>
             {data.length > 0 && (
                 <ul className="events__list">
-                    {console.log(data.map(x => console.log('x', x)))}
                     {data.map(e => (
                         <li className="events__list__item" key={e.id}>
                             <h2 className="events__list__item__name">{e.event_name}</h2>

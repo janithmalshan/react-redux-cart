@@ -18,7 +18,8 @@ function Total() {
             <div>
                 <h3 className="total__p">
                     Total
-                    : <strong>${getTotal().totalPrice.toFixed(2)}</strong>
+                    : <strong>{getTotal().totalPrice.toFixed(2)}$</strong>
+                    <br/><small>({getTotal().totalPrice.toFixed(2)} X 1$)</small>
                 </h3>
             </div>
             <hr />

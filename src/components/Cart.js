@@ -1,6 +1,6 @@
 import Total from "./Total";
 import CartItem from "./CartItem";
-import { makeStoreEmpty} from '../redux/cartSlice';
+import {makeStoreEmpty, showStatus} from '../redux/cartSlice';
 import React from "react";
 import {useDispatch, useSelector} from "react-redux";
 
@@ -12,6 +12,7 @@ function Cart() {
         <div>
             <h2>🛒 Cart</h2>
             <Total />
+            {/*{todo message for no data}*/}
             {
                 cart.length > 0 && <div>
                     {cart.map(item => (
@@ -25,18 +26,12 @@ function Cart() {
                     ))}
                     <hr/>
                     <button className="item__btn block" onClick={() => {
-                        console.log('00 ', showSuccess)
-                        dispatch(makeStoreEmpty())
-                    }}>Place Bet</button>
-
+                        dispatch(showStatus())
+                        setTimeout(() => {
+                            dispatch(makeStoreEmpty())
+                        }, 5000)
+                    }}>{showSuccess ? `Success ✔` : 'Place Bet'}</button>
                 </div>
-            }
-            {
-                //todo showSuccess && <h3>success</h3>
-                setTimeout((showSuccess) => {
-                    console.log('oooooooooooooo',showSuccess)
-                    //showSuccess
-                },1000)
             }
         </div>
     )

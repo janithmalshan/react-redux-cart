@@ -14,7 +14,6 @@ const cartSlice = createSlice({
                 return
             } else {
                 state.cart.push({...action.payload});
-                console.log('selec', action.payload.id)
             }
         },
         removeItem: (state, action) => {
@@ -22,9 +21,12 @@ const cartSlice = createSlice({
             state.cart = removeItem;
         },
         makeStoreEmpty: (state) => {
-            state.showSuccess = true;
+            state.showSuccess = false;
             state.cart = [];
         },
+        showStatus: (state) => {
+            state.showSuccess = true;
+        }
     },
 });
 
@@ -32,5 +34,6 @@ export const cartReducer = cartSlice.reducer;
 export const {
     addToCart,
     removeItem,
-    makeStoreEmpty
+    makeStoreEmpty,
+    showStatus
 } = cartSlice.actions;

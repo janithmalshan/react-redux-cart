@@ -46,7 +46,7 @@
     "event": "Manchester United - Nottingham Forest",
     "outright": [
       {
-        "id2": 3001,
+        "id": 3001,
         "name": "Manchester United",
         "odd": 4.20
       },

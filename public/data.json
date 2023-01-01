@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "event_name": "Liverpool - Real Madrid",
+    "event": "Liverpool - Real Madrid",
     "outright": [
       {
         "id": 1001,
@@ -22,7 +22,7 @@
   },
   {
     "id": 2,
-    "event_name": "Brentford - Tottenham",
+    "event": "Brentford - Tottenham",
     "outright": [
       {
         "id": 2001,
@@ -43,7 +43,7 @@
   },
   {
     "id": 3,
-    "event_name": "Manchester United - Nottingham Forest",
+    "event": "Manchester United - Nottingham Forest",
     "outright": [
       {
         "id2": 3001,

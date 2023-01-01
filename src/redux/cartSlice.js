@@ -22,8 +22,8 @@ const cartSlice = createSlice({
             state.cart = removeItem;
         },
         makeStoreEmpty: (state) => {
+            state.showSuccess = true;
             state.cart = [];
-            state.showSuccess = true
         },
     },
 });

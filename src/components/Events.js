@@ -13,7 +13,7 @@ function Events() {
     useEffect(() => {
         fetchData()
     }, [])
-    //TODO compare 2 arrays and make disable/enable
+
     return (
         <div className="events">
             <h2>🎰 Events</h2>
@@ -21,14 +21,14 @@ function Events() {
                 <ul className="events__list">
                     {data.map(e => (
                         <li className="events__list__item" key={e.id}>
-                            <h2 className="events__list__item__name">{e.event_name}</h2>
+                            <h2 className="events__list__item__name">{e.event}</h2>
                             {
                                 <div className="events__list__item__outrights">{e.outright.map((odd) => (
                                     <Item
                                         key={odd.id}
                                         id={odd.id}
                                         name={odd.name}
-                                        event_name={e.event_name}
+                                        event={e.event}
                                         odd={odd.odd}/>
                                 ))}
                                 </div>

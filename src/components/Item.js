@@ -1,18 +1,25 @@
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {addToCart} from '../redux/cartSlice';
 import React from "react";
 
-function Item({id, name, odd, event_name}) {
-
+function Item({id, name, odd, event}) {
+    const cart = useSelector((state) => state.cart)
     const dispatch = useDispatch()
+
+    let selected = false
+
+    cart.forEach(item => {
+        if (item.id === id) {
+            selected = true
+        }
+    })
 
     return (
         <div
-            className="item item--selected"
-            id={id}
+            className={`item ${selected ? 'item--selected' : ""}`}
             onClick={() =>
                 dispatch(addToCart({
-                    id, name, odd, event_name
+                    id, name, odd, event
                 }))
             }>
             <div className="item__info">

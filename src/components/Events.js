@@ -25,6 +25,7 @@ function Events() {
                             {
                                 <div className="events__list__item__outrights">{item.outright.map((odd) => (
                                     <Item
+                                        id={odd.id}
                                         key={odd.id}
                                         name={odd.name}
                                         event={item.event}

@@ -1,9 +1,23 @@
 .cartItem {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 0 8px 8px 8px;
+  margin-bottom: 2px;
 
   &__info {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__title {
+    color: #6dff5f;
+    text-align: left;
+
+    &--event {
+      color: #656565;
+      font-size: 12px;
+      display: block;
+    }
   }
 
   &__price {
@@ -15,7 +29,14 @@
     font-weight: 400;
     border-radius: 4px;
     padding: 6px 16px 4px;
-    margin-bottom: 8px;
+    margin: -8px 0 0 auto;
+    display: block;
     cursor: pointer;
+    border: 0;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.9;
+    }
   }
 }

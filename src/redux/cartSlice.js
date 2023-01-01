@@ -20,12 +20,12 @@ const cartSlice = createSlice({
             const removeItem = state.cart.filter((item) => item.id !== action.payload);
             state.cart = removeItem;
         },
+        placeBet: (state) => {
+            state.showSuccess = true;
+        },
         makeStoreEmpty: (state) => {
             state.showSuccess = false;
             state.cart = [];
-        },
-        showStatus: (state) => {
-            state.showSuccess = true;
         }
     },
 });
@@ -34,6 +34,6 @@ export const cartReducer = cartSlice.reducer;
 export const {
     addToCart,
     removeItem,
-    makeStoreEmpty,
-    showStatus
+    placeBet,
+    makeStoreEmpty
 } = cartSlice.actions;

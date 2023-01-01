@@ -7,14 +7,17 @@ function CartItem({id, name, odd, event}) {
     return (
         <div className="cartItem">
             <div className="cartItem__info">
-                <p className="cartItem__title">{name} <small><i>({event})</i></small></p>
+                <p className="cartItem__title">
+                    {name}
+                    <span className="cartItem__title--event">{event}</span>
+                </p>
                 <p className="cartItem__price">{odd}</p>
-                <button
-                    className='cartItem__btn'
-                    onClick={() => dispatch(removeItem(id))}>
-                    Remove
-                </button>
             </div>
+            <button
+                className='cartItem__btn'
+                onClick={() => dispatch(removeItem(id))}>
+                Remove
+            </button>
         </div>
     )
 }

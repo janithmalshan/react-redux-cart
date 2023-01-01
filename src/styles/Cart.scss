@@ -1,0 +1,16 @@
+.cart {
+  position: relative;
+
+  &__empty {
+    font-size: 18px;
+    opacity: 0.25;
+  }
+
+  &__disable {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}

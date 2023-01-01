@@ -16,6 +16,7 @@
   }
 
   &__title {
+    color: #6dff5f;
   }
 
   &__price {
@@ -34,6 +35,10 @@
       padding: 16px 48px 16px;
       width: 100%;
       font-size: 24px;
+
+      &:hover {
+        opacity: 0.9;
+      }
     }
   }
 }
